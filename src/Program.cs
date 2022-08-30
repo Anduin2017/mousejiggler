@@ -1,10 +1,16 @@
 using Anduin.MouseJiggler;
 
-// Prepare Windows Forms to run the application.
-Application.SetHighDpiMode(highDpiMode: HighDpiMode.SystemAware);
-Application.EnableVisualStyles();
-Application.SetCompatibleTextRenderingDefault(defaultValue: false);
+static class Program
+{
+    [STAThread]
+    static void Main()
+    {
+        // see https://aka.ms/applicationconfiguration.
+        Application.EnableVisualStyles();
+        Application.SetCompatibleTextRenderingDefault(false);
+        Application.SetHighDpiMode(HighDpiMode.SystemAware);
 
-// Run the application.
-var mainForm = new MainForm(zenJiggleEnabled: true);
-Application.Run(mainForm: mainForm);
+        var mainForm = new MainForm(zenJiggleEnabled: true);
+        Application.Run(mainForm: mainForm);
+    }
+}
