@@ -14,7 +14,7 @@ using System.Windows.Forms;
 
 #endregion
 
-namespace ArkaneSystems.MouseJiggler
+namespace Anduin.MouseJiggler
 {
     public sealed partial class AboutBox : Form
     {
