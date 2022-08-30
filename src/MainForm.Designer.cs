@@ -30,6 +30,7 @@ partial class MainForm
     private void InitializeComponent()
     {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.jiggleTimer = new System.Windows.Forms.Timer(this.components);
             this.flpLayout = new System.Windows.Forms.FlowLayoutPanel();
             this.panelBase = new System.Windows.Forms.Panel();
@@ -178,6 +179,7 @@ partial class MainForm
             // 
             // niTray
             // 
+            this.niTray.Icon = ((System.Drawing.Icon)(resources.GetObject("niTray.Icon")));
             this.niTray.Text = "Mouse Jiggler";
             this.niTray.DoubleClick += new System.EventHandler(this.niTray_DoubleClick);
             // 
