@@ -6,9 +6,5 @@ Application.EnableVisualStyles();
 Application.SetCompatibleTextRenderingDefault(defaultValue: false);
 
 // Run the application.
-var mainForm = new MainForm(jiggleOnStartup: true,
-    minimizeOnStartup: false,
-    zenJiggleEnabled: true,
-    jigglePeriod: 1);
-
+var mainForm = new MainForm(zenJiggleEnabled: true);
 Application.Run(mainForm: mainForm);

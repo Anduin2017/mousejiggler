@@ -1,5 +1,4 @@
-﻿using System;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Runtime.InteropServices;
 using PInvoke;
 
@@ -7,11 +6,6 @@ namespace Anduin.MouseJiggler;
 
 internal static class Helpers
 {
-    /// <summary>
-    ///     Constant value signifying a request to attach to the console of the parent process.
-    /// </summary>
-    internal const int AttachParentProcess = -1;
-
     /// <summary>
     ///     Jiggle the mouse; i.e., fake a mouse movement event.
     /// </summary>
@@ -35,16 +29,6 @@ internal static class Helpers
             },
         };
 
-        var returnValue = User32.SendInput(nInputs: 1, pInputs: new[] { inp, }, cbSize: Marshal.SizeOf<User32.INPUT>());
-
-        if (returnValue != 1)
-        {
-            var errorCode = Marshal.GetLastWin32Error();
-
-            Debugger.Log(level: 1,
-                          category: "Jiggle",
-                          message:
-                          $"failed to insert event to input stream; retval={returnValue}, errcode=0x{errorCode:x8}\n");
-        }
+        _ = User32.SendInput(nInputs: 1, pInputs: new[] { inp, }, cbSize: Marshal.SizeOf<User32.INPUT>());
     }
 }
