@@ -5,4 +5,4 @@ This is an Anduin maintained fork of [arkane-systems/mousejiggler](https://githu
 
 ## Download
 
-Download here [Release](https://github.com/Anduin2017/mousejiggler/releases)
+Download here from [release](https://github.com/Anduin2017/mousejiggler/releases).
