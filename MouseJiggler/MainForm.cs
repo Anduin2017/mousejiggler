@@ -1,27 +1,18 @@
-﻿using System;
-using System.Windows.Forms;
-
-namespace Anduin.MouseJiggler;
+﻿namespace Anduin.MouseJiggler;
 
 public partial class MainForm : Form
 {
     /// <summary>
     ///     Constructor for use by the form designer.
     /// </summary>
-    public MainForm()
-        : this(jiggleOnStartup: false, minimizeOnStartup: false, zenJiggleEnabled: false, jigglePeriod: 1)
-    { }
+    public MainForm() : this(jiggleOnStartup: false, minimizeOnStartup: false, zenJiggleEnabled: false, jigglePeriod: 1)
+    {
+    }
 
     public MainForm(bool jiggleOnStartup, bool minimizeOnStartup, bool zenJiggleEnabled, int jigglePeriod)
     {
         this.InitializeComponent();
-
-        // Jiggling on startup?
         this.JiggleOnStartup = jiggleOnStartup;
-
-        // Set settings properties
-        // We do this by setting the controls, and letting them set the properties.
-
         this.cbMinimize.Checked = minimizeOnStartup;
         this.cbZen.Checked = zenJiggleEnabled;
         this.tbPeriod.Value = jigglePeriod;
