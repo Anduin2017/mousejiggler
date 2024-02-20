@@ -1,5 +1,6 @@
 ﻿using System.Runtime.InteropServices;
-using PInvoke;
+using Windows.Win32.UI.Input.KeyboardAndMouse;
+using Windows.Win32;
 
 namespace Anduin.MouseJiggler;
 
@@ -11,23 +12,24 @@ internal static class Helpers
     /// <param name="delta">The mouse will be moved by delta pixels along both X and Y.</param>
     internal static void Jiggle(int delta)
     {
-        var inp = new User32.INPUT
+        var inp = new INPUT
         {
-            type = User32.InputType.INPUT_MOUSE,
-            Inputs = new User32.INPUT.InputUnion
+            type = INPUT_TYPE.INPUT_MOUSE,
+            Anonymous = new INPUT._Anonymous_e__Union
             {
-                mi = new User32.MOUSEINPUT
+                mi = new MOUSEINPUT
                 {
                     dx = delta,
                     dy = delta,
                     mouseData = 0,
-                    dwFlags = User32.MOUSEEVENTF.MOUSEEVENTF_MOVE,
+                    dwFlags = MOUSE_EVENT_FLAGS.MOUSEEVENTF_MOVE,
                     time = 0,
-                    dwExtraInfo_IntPtr = IntPtr.Zero,
+                    dwExtraInfo = 0,
                 },
             },
         };
 
-        _ = User32.SendInput(nInputs: 1, pInputs: new[] { inp, }, cbSize: Marshal.SizeOf<User32.INPUT>());
+        _ = PInvoke.SendInput(pInputs: new[] { inp, }, cbSize: Marshal.SizeOf<INPUT>());
     }
 }
+
