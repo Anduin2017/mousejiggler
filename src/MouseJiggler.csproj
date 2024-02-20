@@ -7,8 +7,8 @@
     <RootNamespace>Anduin.MouseJiggler</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
     <IsTestProject>false</IsTestProject>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <IsPackable>true</IsPackable>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <IsPackable>false</IsPackable>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <SelfContained>false</SelfContained>
