@@ -2,7 +2,7 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <Version>8.0.1</Version>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFramework>9.0-windows</TargetFramework>
     <AssemblyName>MouseJiggler</AssemblyName>
     <RootNamespace>Anduin.MouseJiggler</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
