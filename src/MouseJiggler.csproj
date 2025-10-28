@@ -22,7 +22,7 @@
     <PackageId>MouseJiggler</PackageId>
     <PackageTags>nuget package dotnet csproj dependencies</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>ssh://git@gitlab.aiursoft.cn:2202/anduin/mousejiggler</PackageProjectUrl>
+    <PackageProjectUrl>ssh://git@gitlab.aiursoft.com:2202/anduin/mousejiggler</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/Aiursoft/mousejiggler.git</RepositoryUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
