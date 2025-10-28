@@ -1,6 +1,6 @@
 # Mouse jiggler
 
-[![ManHours](https://manhours.aiursoft.cn/r/gitlab.aiursoft.com/anduin/mousejiggler.svg)](https://gitlab.aiursoft.com/anduin/mousejiggler/-/commits/master?ref_type=heads)
+[![ManHours](https://manhours.aiursoft.com/r/gitlab.aiursoft.com/anduin/mousejiggler.svg)](https://gitlab.aiursoft.com/anduin/mousejiggler/-/commits/master?ref_type=heads)
 
 This is an Anduin maintained fork of [arkane-systems/mousejiggler](https://github.com/arkane-systems/mousejiggler).
 
