@@ -24,7 +24,7 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>ssh://git@gitlab.aiursoft.com:2202/anduin/mousejiggler</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/Aiursoft/mousejiggler.git</RepositoryUrl>
+    <RepositoryUrl>https://github.com/Anduin2017/mousejiggler.git</RepositoryUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <ApplicationIcon>Mouse (ISO).ico</ApplicationIcon>
